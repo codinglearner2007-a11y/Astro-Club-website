@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-planet",
+      "description": "A vibrant purple planet for the hero section.",
+      "imageUrl": "https://images.unsplash.com/photo-1660786254519-e899d4e2e405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwdXJwbGUlMjBwbGFuZXR8ZW58MHx8fHwxNzYyNjA1NDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "purple planet"
+    },
+    {
+      "id": "about-planet",
+      "description": "An earth-like planet for the about section.",
+      "imageUrl": "https://images.unsplash.com/photo-1643330683233-ff2ac89b002c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlYXJ0aCUyMHBsYW5ldHxlbnwwfHx8fDE3NjI1NDYzNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "earth planet"
+    },
+    {
+      "id": "events-planet",
+      "description": "A fiery, Mars-like planet for the events section.",
+      "imageUrl": "https://images.unsplash.com/photo-1571769267292-e24dfadebbdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYXJzJTIwcGxhbmV0fGVufDB8fHx8MTc2MjYwNTIwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mars planet"
+    },
+    {
+      "id": "gallery-planet",
+      "description": "A large, gaseous planet like Jupiter for the gallery section.",
+      "imageUrl": "https://images.unsplash.com/photo-1711989327929-60386c8d3a66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxqdXBpdGVyJTIwcGxhbmV0fGVufDB8fHx8MTc2MjYwNTIwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jupiter planet"
+    },
+    {
+      "id": "join-planet",
+      "description": "A cool, blueish planet for the join us section.",
+      "imageUrl": "https://images.unsplash.com/photo-1560507074-b9eb43faab00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxibHVlJTIwcGxhbmV0fGVufDB8fHx8MTc2MjYwNTQ2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue planet"
+    },
+    {
+      "id": "saturn-ring",
+      "description": "A texture for Saturn's rings.",
+      "imageUrl": "https://images.unsplash.com/photo-1711989327828-8f7109424a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzYXR1cm4lMjByaW5nfGVufDB8fHx8MTc2MjYwNTQ2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "saturn ring"
+    },
+    {
+      "id": "gallery-image-1",
+      "description": "A beautiful nebula.",
+      "imageUrl": "https://images.unsplash.com/photo-1650365449083-b3113ff48337?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxuZWJ1bGElMjBzcGFjZXxlbnwwfHx8fDE3NjI1MjM0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nebula space"
+    },
+    {
+      "id": "gallery-image-2",
+      "description": "A distant galaxy.",
+      "imageUrl": "https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnYWxheHklMjBzcGFjZXxlbnwwfHx8fDE3NjI1NzM5NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "galaxy space"
+    },
+    {
+      "id": "gallery-image-3",
+      "description": "A lunar eclipse.",
+      "imageUrl": "https://images.unsplash.com/photo-1532798369041-b33eb576ef16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsdW5hciUyMGVjbGlwc2V8ZW58MHx8fHwxNzYyNjA1NDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lunar eclipse"
+    },
+    {
+      "id": "gallery-image-4",
+      "description": "The surface of a moon.",
+      "imageUrl": "https://images.unsplash.com/photo-1552088641-9b36bf761ad7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb29uJTIwc3VyZmFjZXxlbnwwfHx8fDE3NjI2MDUyMDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "moon surface"
+    }
+  ]
 }
