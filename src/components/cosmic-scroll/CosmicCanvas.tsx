@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useRef, useEffect, useState, useCallback } from 'react';
@@ -80,19 +81,32 @@ const CosmicCanvas = () => {
 
     const planetData = [
       { id: 'hero-planet', size: 5, position: new THREE.Vector3(0, 0, 0) },
-      { id: 'about-planet', size: 4, position: new THREE.Vector3(-20, -10, -25) },
-      { id: 'events-planet', size: 4, position: new THREE.Vector3(20, 5, -50) },
-      { id: 'gallery-planet', size: 6, position: new THREE.Vector3(0, -15, -75) },
+      { id: 'about-moon', size: 2.5, position: new THREE.Vector3(-15, -8, -25) },
+      { id: 'events-planet', size: 4, position: new THREE.Vector3(15, 5, -50) },
+      { id: 'gallery-planet', size: 6, position: new THREE.Vector3(-5, -15, -75) },
       { id: 'join-planet', size: 4.5, position: new THREE.Vector3(-10, 0, -100) },
     ];
     
     const planets: THREE.Mesh[] = [];
     planetData.forEach(p => {
         const textureUrl = getImage(p.id)?.imageUrl;
-        const texture = textureLoader.load(textureUrl || '');
+        const materialOptions: THREE.MeshStandardMaterialParameters = { roughness: 0.8, metalness: 0.1 };
+        if (textureUrl) {
+            materialOptions.map = textureLoader.load(textureUrl);
+        }
+        if (p.id === 'about-moon') {
+            materialOptions.roughness = 0.9;
+            const displacementUrl = getImage('moon-displacement')?.imageUrl;
+            if(displacementUrl) {
+                const displacementMap = textureLoader.load(displacementUrl);
+                materialOptions.displacementMap = displacementMap;
+                materialOptions.displacementScale = 0.1;
+            }
+        }
+
         const planet = new THREE.Mesh(
             new THREE.SphereGeometry(p.size, 64, 64),
-            new THREE.MeshStandardMaterial({ map: texture, roughness: 0.8, metalness: 0.1 })
+            new THREE.MeshStandardMaterial(materialOptions)
         );
         planet.position.copy(p.position);
         planet.userData = { id: p.id, lightIntensity: 1.0, basePosition: p.position.clone() };
@@ -111,9 +125,9 @@ const CosmicCanvas = () => {
                 new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide })
             );
             plane.position.set(
-                (i - 2.5) * 6,
-                -15,
-                -85 + Math.random() * 4 - 2
+                (i - 2.5) * 5, // closer together
+                -12, // slightly lower
+                -82 + Math.random() * 4 - 2 // slightly further back
             );
             plane.userData = { id: `gallery-image-${i}` };
             scene.add(plane);
@@ -222,3 +236,5 @@ const CosmicCanvas = () => {
 };
 
 export default CosmicCanvas;
+
+    

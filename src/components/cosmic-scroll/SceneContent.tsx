@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
@@ -148,7 +149,7 @@ const SceneContent: React.FC<SceneContentProps> = ({ camera, objects, activeGall
       title: 'About Us',
       content: <p>We are a passionate group of students dedicated to exploring the wonders of the universe. From stargazing nights to expert talks, we share a common love for all things astronomy.</p>,
       baseFontSize: 24,
-      position3D: new THREE.Vector3(-10, -5, -20),
+      position3D: new THREE.Vector3(-8, -2, -22),
     },
     {
       id: 'events',
@@ -184,7 +185,7 @@ const SceneContent: React.FC<SceneContentProps> = ({ camera, objects, activeGall
     }
   ], []);
 
-  const planets = useMemo(() => Object.values(objects).filter(obj => obj.userData.id && obj.userData.id.includes('planet')), [objects]);
+  const planets = useMemo(() => Object.values(objects).filter(obj => obj.userData.id && (obj.userData.id.includes('planet') || obj.userData.id.includes('moon'))), [objects]);
   
   const [joinFormStyle, setJoinFormStyle] = useState<React.CSSProperties>({});
   useEffect(() => {
@@ -244,3 +245,5 @@ const SceneContent: React.FC<SceneContentProps> = ({ camera, objects, activeGall
 };
 
 export default SceneContent;
+
+    

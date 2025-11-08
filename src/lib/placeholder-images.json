@@ -7,10 +7,16 @@
       "imageHint": "purple planet"
     },
     {
-      "id": "about-planet",
-      "description": "An earth-like planet for the about section.",
-      "imageUrl": "https://images.unsplash.com/photo-1643330683233-ff2ac89b002c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlYXJ0aCUyMHBsYW5ldHxlbnwwfHx8fDE3NjI1NDYzNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "earth planet"
+      "id": "about-moon",
+      "description": "A realistic moon for the about section.",
+      "imageUrl": "https://images.unsplash.com/photo-1534294644519-6a5d48743f5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb29uJTIwdGV4dHVyZXxlbnwwfHx8fDE3NjI2OTM0OTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "moon texture"
+    },
+    {
+      "id": "moon-displacement",
+      "description": "A displacement map for the moon's surface.",
+      "imageUrl": "https://images.unsplash.com/photo-1634889725093-c9a8f574a621?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb29uJTIwc3VyZmFjZSUyMGhlaWdodCUyMG1hcHxlbnwwfHx8fDE3NjI2OTM4NTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "moon surface"
     },
     {
       "id": "events-planet",
