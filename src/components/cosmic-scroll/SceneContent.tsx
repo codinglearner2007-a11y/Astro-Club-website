@@ -69,7 +69,7 @@ const TextSection: React.FC<TextSectionProps> = ({ data, camera, planets }) => {
           baseFontSize: data.baseFontSize,
         });
 
-        const opacity = Math.min(1, Math.max(0.1, 1 - (minDistance-5) / 15));
+        const opacity = Math.min(1, Math.max(0.1, 1 - (data.position3D.distanceTo(camera.position) - 10) / 15));
 
         setDynamicStyle({
           fontSize: result.adjustedFontSize,
@@ -81,7 +81,7 @@ const TextSection: React.FC<TextSectionProps> = ({ data, camera, planets }) => {
         console.error("AI call failed:", error);
       }
     }
-  }, 500), [data, planets, toast]);
+  }, 500), [data, planets, toast, camera.position]);
 
   useEffect(() => {
     const animate = () => {
@@ -245,5 +245,3 @@ const SceneContent: React.FC<SceneContentProps> = ({ camera, objects, activeGall
 };
 
 export default SceneContent;
-
-    

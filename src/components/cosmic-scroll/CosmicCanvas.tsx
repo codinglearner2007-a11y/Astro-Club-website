@@ -89,12 +89,12 @@ const CosmicCanvas = () => {
     
     const planets: THREE.Mesh[] = [];
     planetData.forEach(p => {
-        const textureUrl = getImage(p.id)?.imageUrl;
+        const textureUrl = (p.id === 'hero-planet') ? getImage('about-moon')?.imageUrl : getImage(p.id)?.imageUrl;
         const materialOptions: THREE.MeshStandardMaterialParameters = { roughness: 0.8, metalness: 0.1 };
         if (textureUrl) {
             materialOptions.map = textureLoader.load(textureUrl);
         }
-        if (p.id === 'about-moon') {
+        if (p.id === 'about-moon' || p.id === 'hero-planet') {
             materialOptions.roughness = 0.9;
             const displacementUrl = getImage('moon-displacement')?.imageUrl;
             if(displacementUrl) {
@@ -236,5 +236,3 @@ const CosmicCanvas = () => {
 };
 
 export default CosmicCanvas;
-
-    
